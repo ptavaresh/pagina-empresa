@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import Services
+from .models import Service
 # Create your views here.
 
-def portfolio(request):
-    services = Services.objects.all()
-    return render(request, "service/service.html", {'services':services})
+def services(request):
+    services = Service.objects.all()
+    return render(request, "services/services.html", {'services':services})

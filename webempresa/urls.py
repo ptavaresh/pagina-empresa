@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 urlpatterns = [
-    #core paths
-    path('', include('core.urls')),#extrae las urls de core/urls.py
+    # Paths del core
+    path('', include('core.urls')),
+    # Paths de services
+    path('services/', include('services.urls')),  # extrae las urls de core/urls.py
+    path('blog/', include('blog.urls')),  # extrae las urls de blog/urls.py
     #admin paths
     path('admin/', admin.site.urls),
 ]
