@@ -22,6 +22,7 @@ urlpatterns = [
     # Paths de services
     path('services/', include('services.urls')),  # extrae las urls de core/urls.py
     path('blog/', include('blog.urls')),  # extrae las urls de blog/urls.py
+    path('page/', include('pages.urls')),  # extrae las urls de blog/urls.py
     #admin paths
     path('admin/', admin.site.urls),
 ]
